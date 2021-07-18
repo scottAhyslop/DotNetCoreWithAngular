@@ -1,0 +1,25 @@
+Once you've got the project built, Angular needs the fololowing:
+
+Go into Package Manager Console found in Tools
+
+npm install -g @angular/cli@8.3.29 
+
+this will not give you the latest version, but the MS only wants it running in 8
+
+docs on Angular CLI: https://angular.io/cli
+
+Update to latest chokidar: 
+npm i chokidar
+
+Some Angular dependencies have troubles with the latest versions of Node
+npm i node@14.17.3  seems to work with everything
+
+Angular/compiler has some issues
+npm i @angular/compiler@8.2.14
+or 
+npm i @angular/compiler@8.2.12
+ it will continuinally issue warnings about this, but afeter paying whack-a-mole a few times, I settled on 8.2.14 which doesn't complain
+
+An ini format parser that initially installs to a low, ghigh security alert warning version, this updates it
+
+npm i ini
