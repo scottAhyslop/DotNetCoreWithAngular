@@ -13,6 +13,8 @@ import { BetrayalComponent } from './betrayal/betrayal.component';
 import { DarkSideComponent } from './dark-side/dark-side.component';
 import { LightSideComponent} from './light-side/light-side.component';
 import { RedemptionComponent } from './redemption/redemption.component';
+import { FooterComponent } from './footer/footer.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { RedemptionComponent } from './redemption/redemption.component';
     BetrayalComponent,
     DarkSideComponent,
     LightSideComponent,
-    RedemptionComponent
+    RedemptionComponent,
+    FooterComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -39,6 +43,7 @@ import { RedemptionComponent } from './redemption/redemption.component';
       { path: 'dark-side', component: DarkSideComponent },
       { path: 'betrayal', component: BetrayalComponent },
       { path: 'redemption', component: RedemptionComponent },
+      { path: 'privacy', component: PrivacyComponent}
     ])
   ],
   providers: [],
