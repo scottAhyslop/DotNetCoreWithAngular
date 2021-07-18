@@ -1,25 +1,39 @@
 Once you've got the project built, Angular needs the fololowing:
 
-Go into Package Manager Console found in Tools
-
+**Go into Package Manager Console found in Tools
 npm install -g @angular/cli@8.3.29 
+- this will not give you the latest version, but MS only wants it running in 8
 
-this will not give you the latest version, but the MS only wants it running in 8
+**Audit your newly updated packages
+npm audit fix
+- will automatically update and fix everything, except for a couple of packages that made need dev attention
+npm audit
+- gives you a list of all vulnerabilities but does not fix them, just lists them and some updated libraries will break other dependencies aka dependency hell
 
-docs on Angular CLI: https://angular.io/cli
+** Docs on Angular CLI: https://angular.io/cli
 
-Update to latest chokidar: 
+** Update to latest chokidar: 
 npm i chokidar
 
-Some Angular dependencies have troubles with the latest versions of Node
-npm i node@14.17.3  seems to work with everything
+** Some Angular dependencies have troubles with the latest versions of Node
+npm i node@14.17.3  
+- seems to work with everything
 
-Angular/compiler has some issues
+** Angular/compiler has some issues
 npm i @angular/compiler@8.2.14
 or 
 npm i @angular/compiler@8.2.12
- it will continuinally issue warnings about this, but afeter paying whack-a-mole a few times, I settled on 8.2.14 which doesn't complain
+- it will continuinally issue warnings about this, but after paying whack-a-mole a few times, I settled on 8.2.14 which doesn't complain
 
-An ini format parser that initially installs to a low, ghigh security alert warning version, this updates it
+**An ini format parser that initially installs to a low, high-security alert warning version, this updates it
 
 npm i ini
+
+** to add a new component, go up to the root of ClientApp
+
+ng g c 'test' --skip-import 
+- test is name of component, skip-import prevents the re-adding of dependencies
+
+** at the MS Project root you can type
+dotnet restore 
+and it will restore all the nuget packages, but will not update any of your Angular deps, so run the above steps to do that
