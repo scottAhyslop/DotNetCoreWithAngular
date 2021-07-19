@@ -1,0 +1,44 @@
+{
+  "name": "dotnetcorewithangular",
+  "version": "1.0.0",
+  "description": "A DotNetCore Version with Angular",
+  "main": "index.html",
+  "dependencies": {
+    "@hapi/cryptiles": "^5.1.0",
+    "bl": "^5.0.0",
+    "dot-prop": "^6.0.1",
+    "extend": "^3.0.2",
+    "fstream": "^1.0.12",
+    "hosted-git-info": "^4.0.2",
+    "ini": "^2.0.0",
+    "minimist": "^1.2.5",
+    "npm": "^7.20.0",
+    "npm-user-validate": "^1.0.1",
+    "npx": "^10.2.2",
+    "stringstream": "^1.0.0",
+    "tar": "^6.1.0",
+    "y18n": "^5.0.8",
+    "yargs-parser": "^20.2.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottAhyslop/DotNetCoreWithAngular.git"
+  },
+  "keywords": [
+    "Dot",
+    "Net",
+    "Core",
+    "Angular",
+    "3.1"
+  ],
+  "author": "Scott A. Hyslop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottAhyslop/DotNetCoreWithAngular/issues"
+  },
+  "homepage": "https://github.com/scottAhyslop/DotNetCoreWithAngular#readme"
+}

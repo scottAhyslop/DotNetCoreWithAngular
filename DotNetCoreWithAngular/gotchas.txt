@@ -37,3 +37,21 @@ ng g c 'test' --skip-import
 ** at the MS Project root you can type
 dotnet restore 
 and it will restore all the nuget packages, but will not update any of your Angular deps, so run the above steps to do that
+
+When adding Gulp or Bower to the Project, several Angular dependencies will required updating afterwards...I'll write a script to do this later but for now, here's the dirty dozen or so...
+
+npm i stringstream
+npm i tar
+npm i fstream
+npm i extend
+npm i minimist
+npm i dot-prop
+npm i npm
+npm i ini
+npm i npm-user-validate
+npm i @hapi/cryptiles
+npm i hosted-git-info
+npm i y18n
+npm i yargs-parser
+npm i bl
+
